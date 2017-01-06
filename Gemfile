@@ -1,9 +1,5 @@
+ruby '2.3.1'
 source 'https://rubygems.org'
-
-git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
-  "https://github.com/#{repo_name}.git"
-end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -34,6 +30,23 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+#Base gems!
+gem 'pry-rails'
+gem 'figaro', '~> 1.1', '>= 1.1.1'
+gem 'active_model_serializers', '~> 0.10.0'
+gem 'sinatra', github: 'sinatra/sinatra'
+gem "refile", require: "refile/rails", github: 'refile/refile'
+gem "refile-mini_magick"
+gem 'refile-postgres', '~> 1.4'
+gem 'webpack-rails'
+gem 'rails_12factor', group: :production
+gem 'foreman', '~> 0.82.0'
+
+#Exception / Monitoring!
+gem 'rollbar'
+gem 'oj', '~> 2.12.14'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
