@@ -1,24 +1,27 @@
-# README
+# Project Aegis
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Iron Yard: Companion App (Indianapolis)
 
-Things you may want to cover:
+* Contact Info of Previous Iron Yard Grads
 
-* Ruby version
+* Complete list of Indiana / Indianapolis developer studios
 
-* System dependencies
+* Online resources used (i.e Code Academy, Kirupa etc.) - any useful learning web site or tool
 
-* Configuration
+* Complete list of developer Meetups (Indianapolis) - *Networking!
 
-* Database creation
+* Book Recommendations
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+* Resume / Portfolio building tools and tips
 
 * ...
+
+* Potential names:
+
+* Fe36 (Iron Yard) - Fe is the Symbol for Iron / 36 = 36in or a Yard
+
+* Iron Fulcrum - “Iron Support”
+
+* Iron Aegis - “Iron Shield / Iron Protection / Iron Support
+
+* Fulcrum / Aegis - “The Iron Yard (Indy) Companion App”
