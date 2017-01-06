@@ -8,7 +8,7 @@
 
 * Online resources used (i.e Code Academy, Kirupa etc.) - any useful learning web site or tool
 
-* Complete list of developer Meetups (Indianapolis) - *Networking!
+* Complete list of developer Meetups (Indianapolis) - Networking!
 
 * Book Recommendations
 
