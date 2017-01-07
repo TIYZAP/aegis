@@ -43,7 +43,9 @@ gem 'webpack-rails'
 gem 'rails_12factor', group: :production
 gem 'foreman', '~> 0.82.0'
 gem 'meetup_client'
-
+gem 'slack-ruby-client'
+gem 'omniauth'
+gem 'omniauth-meetup'
 
 #Exception / Monitoring!
 gem 'rollbar'

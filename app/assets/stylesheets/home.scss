@@ -1,0 +1,34 @@
+$col1: #E9573F;
+$col2: #FC6E51;
+$col3:#656D78;
+$col4:#E6E9ED;
+$col5:#3bafda;
+$col6: #434a54;
+*{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,p{
+    font-family: 'Lato', sans-serif;
+}
+.banner{
+    background: $col6;
+    color: white;
+    padding: 20px;
+}
+.home-box-selection{
+    background: $col4;
+    padding: 40px;
+    margin-top: 10px;
+}
+.footer{
+    background: $col6;
+    margin-top: 10px;
+    color:white;
+}
+.logo{
+    background: url(/public/images/header-indianapolis2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 500px;
+}
