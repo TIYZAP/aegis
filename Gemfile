@@ -42,6 +42,8 @@ gem 'refile-postgres', '~> 1.4'
 gem 'webpack-rails'
 gem 'rails_12factor', group: :production
 gem 'foreman', '~> 0.82.0'
+gem 'meetup_client'
+
 
 #Exception / Monitoring!
 gem 'rollbar'

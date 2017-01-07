@@ -1,0 +1,2 @@
+class GradChatsController < ApplicationController
+end
