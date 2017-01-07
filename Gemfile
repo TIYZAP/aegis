@@ -47,6 +47,8 @@ gem 'slack-ruby-client'
 gem 'omniauth'
 gem 'omniauth-meetup'
 gem 'devise'
+gem "typhoeus"
+
 #Exception / Monitoring!
 gem 'rollbar'
 gem 'oj', '~> 2.12.14'
