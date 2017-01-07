@@ -8,8 +8,8 @@ class FrontEndsController < ApplicationController
   end
 
   def meet_up
-    @meet_up = Untappd::Beer.info(params[:id])
-    render json: @meet_up
+    # @meet_up = Typhoeus::Request.new(
+    # render json: @meet_up
   end
 
 
