@@ -1,0 +1,2 @@
+class GradChat < ApplicationRecord
+end

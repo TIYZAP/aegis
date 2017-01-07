@@ -1,0 +1,2 @@
+module GradChatsHelper
+end

@@ -1,0 +1,2 @@
+class BackEnd < ApplicationRecord
+end
