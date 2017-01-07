@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, p {
+  font-family: 'Lato', sans-serif;
+}
+
+.banner {
+  background: #434a54;
+  color: white;
+  padding: 20px;
+}
+
+.home-box-selection {
+  background: #E6E9ED;
+  padding: 40px;
+  margin-top: 10px;
+}
+
+.footer {
+  background: #434a54;
+  margin-top: 10px;
+  color: white;
+}
+
+.logo {
+  background: url(/public/images/header-indianapolis2.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 500px;
+}

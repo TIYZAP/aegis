@@ -10,7 +10,6 @@
   "babel-preset-latest": "^6.16.0",
   "babel-preset-react": "^6.11.1",
   "moment": "^2.15.2",
-  "momentjs": "^2.0.0",
   "react": "^15.2.1",
   "react-dom": "^15.2.1",
   "react-localstorage": "^0.3.0",
