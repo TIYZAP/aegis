@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
   devise_for :users
   root 'front_ends#static'
 
@@ -11,6 +10,7 @@ Rails.application.routes.draw do
     resources :front_ends
 
   end
+
 
   get '/:indytiy(/:random)' => 'front_ends#static'
 
