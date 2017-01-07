@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     resources :back_ends
 
     resources :front_ends
-
+      get '/meetup' => 'front_ends#meet_up'
   end
 
 
