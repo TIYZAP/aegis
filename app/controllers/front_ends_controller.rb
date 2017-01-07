@@ -8,8 +8,8 @@ class FrontEndsController < ApplicationController
   end
 
   def meet_up
-    @beer = Untappd::Beer.info(params[:id])
-    render json: @beer
+    @meet_up = Untappd::Beer.info(params[:id])
+    render json: @meet_up
   end
 
 
