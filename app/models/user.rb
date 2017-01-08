@@ -4,7 +4,7 @@ class User < ApplicationRecord
 
   devise :database_authenticatable, :registerable,
   :recoverable, :rememberable, :trackable, :validatable,
-  :omniauthable, omniauth_providers: [:meetup]
+  :omniauthable, omniauth_providers: [:meet_up]
   acts_as_token_authenticatable
 
 

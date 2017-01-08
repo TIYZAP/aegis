@@ -26,7 +26,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   #   super(scope)
   # end
 
-  def meetup
+  def meet_up
     @user = User.from_omniauth(request.env["omniauth.auth"])
     if @user.persisted?
       redirect_to home_path email: @user.email, token: @user.authentication_token, id: @user.id
