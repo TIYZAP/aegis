@@ -13,10 +13,10 @@ class FrontEndsController < ApplicationController
       method: :get,
       params: {
         :'photo-host' => 'public',
-        page: 10,
-        sig_id: 209483447,
+        page: 20,
+        sig_id: 199727819,
         category: 34,
-        sig: 'dbcf4e2b2b00d29075fec95599b6c76982658dae'
+        sig: '5161f91e824504f8609ee47af53bfefb8fddb8a3'
         }
       )
     parsed = JSON.parse(request.body)
