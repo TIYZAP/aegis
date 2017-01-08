@@ -32,6 +32,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 #Base gems!
+gem 'rack-cors', :require => 'rack/cors'
 gem 'pry-rails'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 gem 'active_model_serializers', '~> 0.10.0'
@@ -48,6 +49,7 @@ gem 'omniauth'
 gem 'omniauth-meetup'
 gem 'devise'
 gem "typhoeus"
+gem 'simple_token_authentication', '~> 1.0'
 
 #Exception / Monitoring!
 gem 'rollbar'
@@ -60,6 +62,7 @@ group :development, :test do
 end
 
 group :development do
+  gem "better_errors"
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
