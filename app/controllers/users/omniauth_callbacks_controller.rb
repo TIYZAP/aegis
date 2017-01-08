@@ -25,4 +25,16 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   # def after_omniauth_failure_path_for(scope)
   #   super(scope)
   # end
+
+  def meetup
+    @user = User.from_omniauth(request.env["omniauth.auth"])
+    if @user.persisted?
+      redirect_to home_path email: @user.email, token: @user.authentication_token, id: @user.id
+      set_flash_message(:notice, :success, :kind => "Meetup") if is_navigational_format?
+    else
+      session["devise.meetup_data"] = request.env["omniauth.auth"]
+      redirect_to new_user_registration_url
+    end
+  end
+
 end
