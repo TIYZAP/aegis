@@ -1,8 +1,9 @@
 import React from 'react'
 //import components
+import Footer from './Footer'
+import Nav from './Nav'
 
-
-class FrontEnd extends React.Component {
+class BackEnd extends React.Component {
     constructor(){
         super()
     }
@@ -12,14 +13,14 @@ class FrontEnd extends React.Component {
                 <div className="container">
                     <div className="row middle-container">
                         <div className="col-sm-12 text-center">
-                            <h1>Front-End Resources</h1>
+                            <h1>Back-End Resources</h1>
                         </div>
                     </div>
                     <div className="row resource-box-style">
                         <div className="col-sm-12">
                             <h2 className="text-center">Interactive Coding</h2>
                             <ul>
-                                <li><a href="https://online.theironyard.com/paths/430/join">The Iron Yard Mini Javascript Course</a></li>
+                                <li><a href="https://online.theironyard.com/paths/534/join">The Iron Yard Mini Ruby Course</a></li>
                                 <li><a href="https://www.codecademy.com/">Code Academy</a></li>
                                 <li><a href="https://www.freecodecamp.com/">FreeCodeCamp</a></li>
                                 <li><a href="https://www.codeschool.com/">Code School</a></li>
@@ -35,23 +36,6 @@ class FrontEnd extends React.Component {
                                 <li><a href="https://www.hackerrank.com/">Hackers Rank</a></li>
                                 <li><a href="http://www.exercism.io/">Exorcism.io</a></li>
                                 <li><a href="https://www.coderbyte.com/">Coderbyte</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="row resource-box-style">
-                        <div className="col-sm-12">
-                            <h2 className="text-center">Design Inspiration</h2>
-                            <ul>
-                                <li><a href="https://dribbble.com/">Dribbble</a></li>
-                                <li><a href="https://html5up.net/">HTML5up</a></li>
-                                <li><a href="http://htmlinspiration.com/">HTML Inspiration</a></li>
-                                <li><a href="http://www.cssdesignawards.com/">CSS-Design-Awards</a></li>
-                                <li><a href="http://cssreel.com/">CSS-Reel</a></li>
-                                <li><a href="https://www.thebestdesigns.com/">The-Best-Designs</a></li>
-                                <li><a href="http://www.bestcss.in/">Best-CSS</a></li>
-                                <li><a href="https://www.pinterest.com/search/pins/?q=website%20design&rs=typed&term_meta[]=website%7Ctyped&term_meta[]=design%7Ctyped">Pinterest</a></li>
-                                <li><a href="http://www.uxapprentice.com/">UX Apprentice</a></li>
-
                             </ul>
                         </div>
                     </div>
@@ -73,16 +57,16 @@ class FrontEnd extends React.Component {
                     </div>
                     <div className="row resource-box-style">
                         <div className="col-sm-12">
-                            <h2 className="text-center">Javascript / jQuery / Node.JS / React</h2>
+                            <h2 className="text-center">Ruby / Ruby on Rails</h2>
                             <ul>
-                                <li><a href="http://jstherightway.org/">JS - The Right Way</a></li>
-                                <li><a href="https://github.com/jasdeepsingh/ES6-for-humans/blob/master/README.md">ES6- For Humans</a></li>
-                                <li><a href="http://kangax.github.io/compat-table/es6/">ES6- Compatability Table</a></li>
-                                <li><a href="http://jswarrior.fusioncharts.com/">JS-Warrior</a></li>
-                                <li><a href="http://jqfundamentals.com/">jQuery-Fundamentals</a></li>
-                                <li><a href="https://oscarotero.com/jquery/">jQuery-CheatSheet</a></li>
-                                <li><a href="http://www.robinwieruch.de/the-road-to-learn-react/">The Road to learn React</a></li>
-                                <li><a href="https://egghead.io/courses/react-fundamentals">EggHead - React Fundamentals</a></li>
+                                <li><a href="http://rubylearning.com/">Ruby Learning</a></li>
+                                <li><a href="https://learnrubythehardway.org/book/">Learn Ruby - The Hard Way</a></li>
+                                <li><a href="https://www.railstutorial.org/book">Ruby on Rails Tutorial</a></li>
+                                <li><a href="http://guides.railsgirls.com/">Rails Girls</a></li>
+                                <li><a href="https://www.coderbyte.com/">Coderbyte</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=Dji9ALCgfpM">Ruby Programming - Youtube Video</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=nRyUn7D8zCc">Ruby on Rails from the Ground up - Youtube Video Series</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=pPy0GQJLZUM">Ruby on Rails in 60mins - Youtube Video</a></li>
                             </ul>
                         </div>
                     </div>
@@ -91,4 +75,4 @@ class FrontEnd extends React.Component {
         )
     }
 }
-export default FrontEnd
+export default BackEnd
