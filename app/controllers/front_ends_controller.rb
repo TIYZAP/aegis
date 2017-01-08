@@ -9,7 +9,7 @@ class FrontEndsController < ApplicationController
 
   def meet_up
     request = Typhoeus::Request.get(
-      'https://api.meetup.com/find/groups',
+      'https://api.meetup.com/find/groups?',
       method: :get,
       params: {
         :'photo-host' => 'public',
