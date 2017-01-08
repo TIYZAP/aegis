@@ -249,7 +249,7 @@ Devise.setup do |config|
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
   config.omniauth :meetup, ENV['KEY'], ENV['SECRET']
-  # callback_url: 'http://example.com/users/auth/meetup/callback'
+  callback_url: 'https://api.meetup.com/find/groups'
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
