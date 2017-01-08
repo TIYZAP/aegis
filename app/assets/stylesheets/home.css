@@ -8,8 +8,35 @@ h1, h2, h3, h4, h5, p {
 
 .banner {
   background: #434a54;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   color: white;
   padding: 20px;
+}
+
+.banner a {
+  color: white;
+}
+
+.banner a:hover, .banner a:focus {
+  color: #E9573F;
+}
+
+.banner a:hover i, .banner a:focus i {
+  color: white;
+}
+
+.home-middle-section a {
+  color: black;
+}
+
+.home-middle-section a:hover {
+  color: #E9573F;
+}
+
+.middle-container {
+  margin-top: 100px;
 }
 
 .home-box-selection {
@@ -24,10 +51,60 @@ h1, h2, h3, h4, h5, p {
   color: white;
 }
 
-.logo {
+.footer a {
+  color: white;
+}
+
+.footer a:hover, .footer a:focus {
+  color: #E9573F;
+}
+
+.logo-background {
+  margin-top: 100px;
   background: url(/images/header-indianapolis2.jpg);
+  background-attachment: fixed;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   height: 500px;
+}
+
+.logo-background img {
+  width: 400px;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.about-section {
+  padding: 20px;
+}
+
+.resource-box-style {
+  background: #E6E9ED;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.contact-form {
+  background: #E6E9ED;
+  padding: 10px;
+  height: 500px;
+  min-width: 300px;
+  width: 500px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.contact-form input {
+  height: 40px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input:active {
+  border: 1px solid #E9573F;
+}
+
+.contact-form button {
+  height: 40px;
 }

@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router'
-import Footer from './Footer'
 
 
 class Home extends React.Component {
@@ -11,17 +10,13 @@ class Home extends React.Component {
         return(
             <div>
             <div className="container-fluid">
-              <div className="row ">
-                <div className="col-sm-12 col-xs-12 banner text-center">
-                  <h1>Fe26 Indy Companion App</h1>
-                </div>
-              </div>
-              <div className="row logo">
-                <div className="col-sm-12">
+              <div className="row logo-background">
+                <div className="col-sm-12 text-center">
+                    <img src="/images/iron-yard-logo.svg"/>
                 </div>
               </div>
             </div>
-            <div className="container">
+            <div className="container home-middle-section">
               <div className="row">
                 <Link to="/frontend">
                 <div className="col-sm-12 col-xs-12 home-box-selection">
@@ -31,11 +26,13 @@ class Home extends React.Component {
                 </Link>
               </div>
               <div className="row">
+                  <Link to="/backend">
                 <div className="col-sm-12 col-xs-12 home-box-selection">
                   <div className="col-sm-4  text-center"><img src="/images/back-end-icon.png" alt="" />
                     <h2>Back-End Engineering</h2></div>
                     <div className="col-sm-8 hidden-xs"><h4>Back-End Engineering focuses on the logic and database needs required to run and scale web applications. Back-end products combine databases, APIs, and user interface frameworks. Back-end developers deploy fully-formed products to the cloud, integrate with online services, and enable mobile and front-end applications.</h4></div>
                   </div>
+                  </Link>
                 </div>
 
               <div className="row">
@@ -46,7 +43,6 @@ class Home extends React.Component {
                   </div>
                 </div>
             </div>
-            <Footer />
         </div>
         )
     }

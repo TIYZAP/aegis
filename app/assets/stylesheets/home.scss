@@ -12,8 +12,31 @@ h1,h2,h3,h4,h5,p{
 }
 .banner{
     background: $col6;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
     color: white;
     padding: 20px;
+    a{
+        color: white;
+        &:hover, &:focus {
+            i{
+                color: white;
+            }
+            color: $col1;
+        }
+    }
+}
+.home-middle-section{
+    a{
+        color: black;
+        &:hover{
+            color: $col1;
+        }
+    }
+}
+.middle-container{
+    margin-top: 100px;
 }
 .home-box-selection{
     background: $col4;
@@ -24,11 +47,53 @@ h1,h2,h3,h4,h5,p{
     background: $col6;
     margin-top: 10px;
     color:white;
+    a{
+        color: white;
+        &:hover, &:focus{
+            color: $col1;
+        }
+    }
 }
-.logo{
+.logo-background{
+    margin-top: 100px;
     background: url(/images/header-indianapolis2.jpg);
+    background-attachment: fixed;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     height: 500px;
+    img{
+        width: 400px;
+        padding: 10px;
+        margin-top: 30px;
+    }
+}
+.about-section{
+    padding: 20px;
+}
+
+.resource-box-style{
+    background: $col4;
+    margin-top: 10px;
+    padding: 10px;
+}
+.contact-form{
+    background: $col4;
+    padding: 10px;
+    height: 500px;
+    min-width: 300px;
+    width: 500px;
+    margin:auto;
+    margin-bottom: 50px;
+    input{
+        height: 40px;
+        display: block;
+        margin-bottom:5px;
+        &:active{
+            border: 1px solid $col1;
+        }
+    }
+    button{
+        height: 40px;
+    }
 }
