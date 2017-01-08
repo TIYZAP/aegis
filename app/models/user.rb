@@ -28,4 +28,5 @@ class User < ApplicationRecord
     @user = User.find(params[:id])
     user_path(current_user)
   end
+
 end
