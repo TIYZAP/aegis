@@ -6,19 +6,28 @@ class AboutUs extends React.Component {
             <div className="container">
                 <div className="row middle-container">
                     <h1 className="text-center">Contact Us</h1>
-                    <div className="contact-form">
-                        <div className="form-group">
-                            <label htmlFor="subject">Subject</label>
-                            <input className="form-control" id="subject" placeholder="Subject" />
+                    <div className="col-sm-6 col-sm-offset-3 contact-form">
+                        <form action="https://formspree.io/james.hildreth@theironyard.com" method="POST">
+                        <div className="col-sm-6 form-group">
+                            <input className="form-control" name="First Name" placeholder="First Name" />
+                        </div>
+                        <div className="col-sm-6 form-group">
+                            <input className="form-control" name="Last Name" placeholder="Last Name" />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="message">Message</label>
-                        <textarea id="message" className="form-control" cols="80" rows="10" placeholder="Enter your message here..." />
-                    </div>
+                            <input type="email" name="Email" className="form-control" placeholder="Your email address" />
+                        </div>
+                        <div className="form-group">
+                            <input className="form-control" name="Subject"  placeholder="Subject" />
+                        </div>
+                        <div className="form-group">
+                        <textarea name="Message" className="form-control"  rows="10" placeholder="Enter your message here..." />
+                        </div>
                         <br/>
                         <div className="text-right">
-                            <button className="btn btn-default">Submit</button>
+                            <input type="submit" value="Submit"></input>
                         </div>
+                        </form>
                     </div>
                 </div>
             </div>

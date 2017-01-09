@@ -18,24 +18,16 @@ class BackEnd extends React.Component {
                     </div>
                     <div className="row resource-box-style">
                         <div className="col-sm-12">
-                            <h2 className="text-center">Interactive Coding</h2>
+                            <h2 className="text-center">Ruby / Ruby on Rails</h2>
                             <ul>
-                                <li><a href="https://online.theironyard.com/paths/534/join">The Iron Yard Mini Ruby Course</a></li>
-                                <li><a href="https://www.codecademy.com/">Code Academy</a></li>
-                                <li><a href="https://www.freecodecamp.com/">FreeCodeCamp</a></li>
-                                <li><a href="https://www.codeschool.com/">Code School</a></li>
-                                <li><a href="https://www.udacity.com/">Udacity</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="row resource-box-style">
-                        <div className="col-sm-12">
-                            <h2 className="text-center">Coding Practice Website</h2>
-                            <ul>
-                                <li><a href="https://www.codewars.com">CodeWars</a></li>
-                                <li><a href="https://www.hackerrank.com/">Hackers Rank</a></li>
-                                <li><a href="http://www.exercism.io/">Exorcism.io</a></li>
+                                <li><a href="http://rubylearning.com/">Ruby Learning</a></li>
+                                <li><a href="https://learnrubythehardway.org/book/">Learn Ruby - The Hard Way</a></li>
+                                <li><a href="https://www.railstutorial.org/book">Ruby on Rails Tutorial</a></li>
+                                <li><a href="http://guides.railsgirls.com/">Rails Girls</a></li>
                                 <li><a href="https://www.coderbyte.com/">Coderbyte</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=Dji9ALCgfpM">Ruby Programming - Youtube Video</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=nRyUn7D8zCc">Ruby on Rails from the Ground up - Youtube Video Series</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=pPy0GQJLZUM">Ruby on Rails in 60mins - Youtube Video</a></li>
                             </ul>
                         </div>
                     </div>
@@ -57,16 +49,24 @@ class BackEnd extends React.Component {
                     </div>
                     <div className="row resource-box-style">
                         <div className="col-sm-12">
-                            <h2 className="text-center">Ruby / Ruby on Rails</h2>
+                            <h2 className="text-center">Interactive Coding</h2>
                             <ul>
-                                <li><a href="http://rubylearning.com/">Ruby Learning</a></li>
-                                <li><a href="https://learnrubythehardway.org/book/">Learn Ruby - The Hard Way</a></li>
-                                <li><a href="https://www.railstutorial.org/book">Ruby on Rails Tutorial</a></li>
-                                <li><a href="http://guides.railsgirls.com/">Rails Girls</a></li>
+                                <li><a href="https://online.theironyard.com/paths/534/join">The Iron Yard Mini Ruby Course</a></li>
+                                <li><a href="https://www.codecademy.com/">Code Academy</a></li>
+                                <li><a href="https://www.freecodecamp.com/">FreeCodeCamp</a></li>
+                                <li><a href="https://www.codeschool.com/">Code School</a></li>
+                                <li><a href="https://www.udacity.com/">Udacity</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="row resource-box-style">
+                        <div className="col-sm-12">
+                            <h2 className="text-center">Coding Practice Website</h2>
+                            <ul>
+                                <li><a href="https://www.codewars.com">CodeWars</a></li>
+                                <li><a href="https://www.hackerrank.com/">Hackers Rank</a></li>
+                                <li><a href="http://www.exercism.io/">Exorcism.io</a></li>
                                 <li><a href="https://www.coderbyte.com/">Coderbyte</a></li>
-                                <li><a href="https://www.youtube.com/watch?v=Dji9ALCgfpM">Ruby Programming - Youtube Video</a></li>
-                                <li><a href="https://www.youtube.com/watch?v=nRyUn7D8zCc">Ruby on Rails from the Ground up - Youtube Video Series</a></li>
-                                <li><a href="https://www.youtube.com/watch?v=pPy0GQJLZUM">Ruby on Rails in 60mins - Youtube Video</a></li>
                             </ul>
                         </div>
                     </div>

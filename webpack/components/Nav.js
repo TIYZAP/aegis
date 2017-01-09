@@ -2,10 +2,11 @@ import React from 'react'
 import { Link } from 'react-router'
 
 class Nav extends React.Component {
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
     }
     render(){
+        // console.log(this.props.testData)
         return(
             <div className="container-fluid banner">
               <div className="row ">
