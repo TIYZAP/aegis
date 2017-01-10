@@ -17,13 +17,17 @@ h2,h4,li{
 }
 body{
 }
-.banner{
+.nav-bar{
     background: $col6;
     position: fixed;
     width: 100%;
     z-index: 1;
     color: white;
-    padding: 20px;
+    padding: 10px;
+    img{
+        height: 40px;
+        width: 50px;
+    }
     a{
         color: white;
         &:hover, &:focus {
@@ -44,7 +48,7 @@ body{
     }
 }
 .middle-container{
-    margin-top: 120px;
+    margin-top: 100px;
 }
 .home-box-selection{
     background: $col4;
@@ -65,7 +69,7 @@ body{
     }
 }
 .logo-background{
-    margin-top: 100px;
+    margin-top: 80px;
     background: url(/images/header-indianapolis2.jpg);
     background-attachment: fixed;
     background-size: cover;
