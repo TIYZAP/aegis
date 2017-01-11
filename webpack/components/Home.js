@@ -36,7 +36,7 @@ class Home extends React.Component {
                 </div>
 
               <div className="row">
-                  <a href="https://secure.meetup.com/oauth2/authorize?client_id=1hn33juur3hivsvcl008f9117q&response_type=token&redirect_uri=https://localhost:5000">
+                  <a href="https://secure.meetup.com/oauth2/authorize?client_id=1hn33juur3hivsvcl008f9117q&response_type=token&redirect_uri=https://infinite-mountain-59772.herokuapp.com/">
                 <div className="col-sm-12 col-xs-12 home-box-selection">
                   <div className="col-sm-4 text-center"><i className="fa fa-commenting-o fa-4x" aria-hidden="true"></i>
                     <h2>Grad Chat</h2></div>
