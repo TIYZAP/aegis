@@ -1,22 +1,33 @@
+//color pallet
 $col1: #E9573F;
 $col2: #FC6E51;
 $col3:#656D78;
 $col4:#E6E9ED;
 $col5:#3bafda;
 $col6: #434a54;
+
 *{
     box-sizing: border-box;
 }
-h1,h2,h3,h4,h5,p{
-    font-family: 'Lato', sans-serif;
+h1{
+    font-family: 'Lato', sans-serif !important;
 }
-.banner{
+h2,h4,li{
+    font-family: 'Roboto', sans-serif !important;
+}
+body{
+}
+.nav-bar{
     background: $col6;
     position: fixed;
     width: 100%;
     z-index: 1;
     color: white;
-    padding: 20px;
+    padding: 10px;
+    img{
+        height: 40px;
+        width: 50px;
+    }
     a{
         color: white;
         &:hover, &:focus {
@@ -27,6 +38,7 @@ h1,h2,h3,h4,h5,p{
         }
     }
 }
+
 .home-middle-section{
     a{
         color: black;
@@ -45,8 +57,10 @@ h1,h2,h3,h4,h5,p{
 }
 .footer{
     background: $col6;
-    margin-top: 10px;
+    margin-top: 20px;
     color:white;
+    width: 100%;
+    padding: 10px;
     a{
         color: white;
         &:hover, &:focus{
@@ -55,7 +69,7 @@ h1,h2,h3,h4,h5,p{
     }
 }
 .logo-background{
-    margin-top: 100px;
+    margin-top: 80px;
     background: url(/images/header-indianapolis2.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -63,9 +77,8 @@ h1,h2,h3,h4,h5,p{
     background-repeat: no-repeat;
     height: 500px;
     img{
-        width: 400px;
-        padding: 10px;
-        margin-top: 30px;
+        min-width: 300px;
+        padding-top: 80px;
     }
 }
 .about-section{
@@ -79,18 +92,27 @@ h1,h2,h3,h4,h5,p{
 }
 .contact-form{
     background: $col4;
-    padding: 10px;
-    height: 500px;
-    min-width: 300px;
-    width: 500px;
+    padding: 30px;
     margin:auto;
     margin-bottom: 50px;
     input{
+        padding: 10px;
+        border: none;
+        border-radius: none;
+        border-bottom: solid 2px #c9c9c9;
+        transition: border 0.7s;
         height: 40px;
-        display: block;
         margin-bottom:5px;
-        &:active{
-            border: 1px solid $col1;
+        &:focus{
+            border-bottom: solid 2px $col1;
+        }
+    }
+    textarea{
+        border: none;
+        padding: 10px;
+        transition: border 0.7s;
+        &:focus{
+            border-bottom: solid 2px $col1;
         }
     }
     button{

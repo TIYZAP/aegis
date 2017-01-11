@@ -2,28 +2,37 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, p {
-  font-family: 'Lato', sans-serif;
+h1 {
+  font-family: 'Lato', sans-serif !important;
 }
 
-.banner {
+h2, h4, li {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.nav-bar {
   background: #434a54;
   position: fixed;
   width: 100%;
   z-index: 1;
   color: white;
-  padding: 20px;
+  padding: 10px;
 }
 
-.banner a {
+.nav-bar img {
+  height: 40px;
+  width: 50px;
+}
+
+.nav-bar a {
   color: white;
 }
 
-.banner a:hover, .banner a:focus {
+.nav-bar a:hover, .nav-bar a:focus {
   color: #E9573F;
 }
 
-.banner a:hover i, .banner a:focus i {
+.nav-bar a:hover i, .nav-bar a:focus i {
   color: white;
 }
 
@@ -47,8 +56,10 @@ h1, h2, h3, h4, h5, p {
 
 .footer {
   background: #434a54;
-  margin-top: 10px;
+  margin-top: 20px;
   color: white;
+  width: 100%;
+  padding: 10px;
 }
 
 .footer a {
@@ -60,7 +71,7 @@ h1, h2, h3, h4, h5, p {
 }
 
 .logo-background {
-  margin-top: 100px;
+  margin-top: 80px;
   background: url(/images/header-indianapolis2.jpg);
   background-attachment: fixed;
   background-size: cover;
@@ -70,9 +81,8 @@ h1, h2, h3, h4, h5, p {
 }
 
 .logo-background img {
-  width: 400px;
-  padding: 10px;
-  margin-top: 30px;
+  min-width: 300px;
+  padding-top: 80px;
 }
 
 .about-section {
@@ -87,22 +97,33 @@ h1, h2, h3, h4, h5, p {
 
 .contact-form {
   background: #E6E9ED;
-  padding: 10px;
-  height: 500px;
-  min-width: 300px;
-  width: 500px;
+  padding: 30px;
   margin: auto;
   margin-bottom: 50px;
 }
 
 .contact-form input {
+  padding: 10px;
+  border: none;
+  border-radius: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.7s;
   height: 40px;
-  display: block;
   margin-bottom: 5px;
 }
 
-.contact-form input:active {
-  border: 1px solid #E9573F;
+.contact-form input:focus {
+  border-bottom: solid 2px #E9573F;
+}
+
+.contact-form textarea {
+  border: none;
+  padding: 10px;
+  transition: border 0.7s;
+}
+
+.contact-form textarea:focus {
+  border-bottom: solid 2px #E9573F;
 }
 
 .contact-form button {
