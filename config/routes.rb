@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     resources :grad_chats
     resources :back_ends
     resources :front_ends
-    get '/meetup' => 'front_ends#meet_up'
+    get '/meetup/index' => 'meetup#index'
   end
   devise_for :users, controllers: {
     omniauth_callbacks: "users/omniauth_callbacks",
