@@ -19,7 +19,6 @@ request = Typhoeus::Request.get(
 seed = JSON.parse(request.body)
 
 seed.each do |meet|
-  puts meet.inspect
   Meetup.create!(
   name: meet['name'],
   link: meet['link'],
@@ -31,6 +30,6 @@ seed.each do |meet|
   )
   if meet['group_photo']
     group = Meetup.find_by(meetup_id: meet['id'])
-    group.update(remote_image_url: meet['group_photo']['photo_link'])
+    group.update(remote_image_url: meet['group_photo']['highres_link'])
   end
 end
