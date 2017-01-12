@@ -27,6 +27,10 @@ seed.each do |meet|
   city: meet['city'],
   state: meet['state'],
   meetup_id: meet['id'],
-  members: meet['members']
+  members: meet['members'],
   )
+  if meet['group_photo']
+    group = Meetup.find_by(meetup_id: meet['id'])
+    group.update(remote_image_url: meet['group_photo']['photo_link'])
+  end
 end
