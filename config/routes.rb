@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     resources :back_ends
     resources :front_ends
     get '/meetup/index' => 'meetup#index'
+    get '/meetup/upcoming' => 'meetup#upcoming_events'
   end
   devise_for :users, controllers: {
     omniauth_callbacks: "users/omniauth_callbacks",
