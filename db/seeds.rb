@@ -5,31 +5,31 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-request = Typhoeus::Request.get(
-  'https://api.meetup.com/find/groups?',
-  method: :get,
-  params: {
-    :'photo-host' => 'public',
-    page: 20,
-    sig_id: 199727819,
-    category: 34,
-    sig: '5161f91e824504f8609ee47af53bfefb8fddb8a3'
-    }
-  )
-seed = JSON.parse(request.body)
+meets = ['Indianapolis-Downtown-Code-and-Coffee', 'agileindy', 'Girl-Develop-It-Indianapolis', 'indypy', 'Free-Code-Camp-Indy', 'Dev-Workshop-Indy', 'indyelixir', 'indyrb', 'indyjs', 'Node-indy']
 
-seed.each do |meet|
-  Meetup.create!(
-  name: meet['name'],
-  link: meet['link'],
-  description: meet['description'],
-  city: meet['city'],
-  state: meet['state'],
-  meetup_id: meet['id'],
-  members: meet['members'],
-  )
-  if meet['group_photo']
-    group = Meetup.find_by(meetup_id: meet['id'])
-    group.update(remote_image_url: meet['group_photo']['highres_link'])
-  end
+meets.each do |meetup|
+  request = Typhoeus::Request.get(
+    "https://api.meetup.com/#{meetup}?",
+    method: :get,
+    params: {
+      :'photo-host' => 'public',
+      key: ENV['MEETUP_API_KEY'],
+      format: 'json'
+      }
+    )
+  seed = JSON.parse(request.body)
+  puts seed.inspect
+    Meetup.create!(
+    name: seed['name'],
+    link: seed['link'],
+    description: seed['description'],
+    city: seed['city'],
+    state: seed['state'],
+    meetup_id: seed['id'],
+    members: seed['members'],
+    )
+    if seed['group_photo']
+      group = Meetup.find_by(meetup_id: seed['id'])
+      group.update(remote_image_url: seed['group_photo']['highres_link'])
+    end
 end
