@@ -44,6 +44,16 @@ class Home extends React.Component {
                   </div>
                   </a>
                 </div>
+
+              <div className="row">
+                  <Link to="/meetup">
+                <div className="col-sm-12 col-xs-12 home-box-selection">
+                  <div className="col-sm-4 text-center"><i className="fa fa-meetup" aria-hidden="true"></i>
+                    <h2>Meetups!</h2></div>
+                    <div className="col-sm-8 hidden-xs"><h4>Here are a list of meetups that you should try to go to. Meetups are a great way to network and find leads on job opportunities.</h4></div>
+                  </div>
+                  </Link>
+                </div>
             </div>
         </div>
         )

@@ -2,11 +2,12 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 9.5.4
--- Dumped by pg_dump version 9.5.4
+-- Dumped from database version 9.6.1
+-- Dumped by pg_dump version 9.6.1
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
 SET client_encoding = 'UTF8';
 SET standard_conforming_strings = on;
 SET check_function_bodies = false;
@@ -262,49 +263,49 @@ ALTER SEQUENCE users_id_seq OWNED BY users.id;
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: -
+-- Name: back_ends id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY back_ends ALTER COLUMN id SET DEFAULT nextval('back_ends_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: -
+-- Name: front_ends id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY front_ends ALTER COLUMN id SET DEFAULT nextval('front_ends_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: -
+-- Name: grad_chats id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY grad_chats ALTER COLUMN id SET DEFAULT nextval('grad_chats_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: -
+-- Name: meetups id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY meetups ALTER COLUMN id SET DEFAULT nextval('meetups_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: -
+-- Name: refile_attachments id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY refile_attachments ALTER COLUMN id SET DEFAULT nextval('refile_attachments_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: -
+-- Name: users id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY users ALTER COLUMN id SET DEFAULT nextval('users_id_seq'::regclass);
 
 
 --
--- Name: ar_internal_metadata_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: ar_internal_metadata ar_internal_metadata_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY ar_internal_metadata
@@ -312,7 +313,7 @@ ALTER TABLE ONLY ar_internal_metadata
 
 
 --
--- Name: back_ends_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: back_ends back_ends_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY back_ends
@@ -320,7 +321,7 @@ ALTER TABLE ONLY back_ends
 
 
 --
--- Name: front_ends_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: front_ends front_ends_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY front_ends
@@ -328,7 +329,7 @@ ALTER TABLE ONLY front_ends
 
 
 --
--- Name: grad_chats_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: grad_chats grad_chats_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY grad_chats
@@ -336,7 +337,7 @@ ALTER TABLE ONLY grad_chats
 
 
 --
--- Name: meetups_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: meetups meetups_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY meetups
@@ -344,7 +345,7 @@ ALTER TABLE ONLY meetups
 
 
 --
--- Name: refile_attachments_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: refile_attachments refile_attachments_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY refile_attachments
@@ -352,7 +353,7 @@ ALTER TABLE ONLY refile_attachments
 
 
 --
--- Name: schema_migrations_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: schema_migrations schema_migrations_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY schema_migrations
@@ -360,7 +361,7 @@ ALTER TABLE ONLY schema_migrations
 
 
 --
--- Name: users_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: users users_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY users
