@@ -7,6 +7,7 @@ import Layout from './components/Layout'
 import Home from './components/Home'
 import FrontEnd from './components/FrontEnd'
 import BackEnd from './components/BackEnd'
+import Meetup from './components/Meetup'
 import About from './components/About'
 import ContactUs from './components/ContactUs'
 
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function(event){
                 <IndexRoute component={Home} />
                 <Route path="/frontend" component={FrontEnd}/>
                 <Route path="/backend" component={BackEnd}/>
+                <Route path="/meetup" component={Meetup}/>
                 <Route path="/about" component={About}/>
                 <Route path="/contactus" component={ContactUs}/>
             </Route>
